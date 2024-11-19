@@ -343,7 +343,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Email: <a href="https://html5up.net">leodutt07@gmail.com</a>.</p>
+						<p class="copyright">&copy; Email: <a href="javascript:void(0);" id="email-link" onclick="copyEmail()">xyz@gmail.com</a></p>
+
+<script>
+  function copyEmail() {
+    var email = "leodutt07@gmail.com"; // Email address to be copied
+    var tempInput = document.createElement("input"); // Create a temporary input field
+    tempInput.value = email; // Set the email value to the temporary input field
+    document.body.appendChild(tempInput); // Append the input field to the body
+    tempInput.select(); // Select the text in the input field
+    document.execCommand("copy"); // Copy the text to the clipboard
+    document.body.removeChild(tempInput); // Remove the temporary input field
+    alert("Email copied to clipboard: " + email); // Optional: Show a confirmation message
+  }
+</script>
+
 					</footer>
 
 			</div>
