@@ -66,12 +66,84 @@ Welcome to my IT portfolio! I am an experienced IT professional with a diverse s
 									<br> Issue: Remote employee unable to connect to the company's VPN.
                                                                         <br> Priority: High (affecting work productivity).
                                                                         <br> Reported Symptoms:
-                                                                        <br> - The VPN client fails to establish a connection.
-                                                                        <br> -  Error message: "Unable to establish a secure connection."
-                                                                        <br> -  Other internet services working as expected.
+                                                                        <br> • The VPN client fails to establish a connection.
+                                                                        <br> •  Error message: "Unable to establish a secure connection."
+                                                                        <br> •  Other internet services working as expected.
                                                                         <br><br>  <b>Impact:</b> 
                                                                         <br> Employee cannot access internal company resources critical for their role.
                                                                         <br><br> Assigned Technician: <b>Leo</b></p>
+
+								        <br><br> <b>Troubleshooting Process</b> 
+									<br><br> <b>Step 1: Initial Diagnosis</b>
+									<br><br> 1. Contact the User:
+									<br> • Confirm the error and gather additional details (when the issue started, recent system changes, etc.).
+									<br> • Verify the user's environment:
+									<br> &nbsp; - Device: Windows 11 laptop
+									<br> &nbsp; - Internet: Stable home Wi-Fi
+									<br><br> 2. Reproduce the Issue:
+									<br> • Ask the user to attempt reconnecting to the VPN.
+									<br> • Confirm the exact error message.
+									<br><br> 3. Assess Common Issues:										
+									<br> • Check for basic problems: incorrect credentials, outdated software, or firewall interference.
+									<br><br> <b>Step 2: Identify Root Cause</b>	
+									<br><br> 1. Check System Logs:
+									<br> • Ask the user to open the VPN client log files and share details.
+									<br> • Logs showed error ERR-101: Unable to negotiate encryption protocol.
+									<br><br> 2. Network Diagnostics:
+									<br> • Ping the VPN gateway to confirm accessibility (ping vpn.companydomain.com).
+									<br> &nbsp; - Response: "Request timed out."
+									<br> • Verify other online services like web browsing.
+									<br><br> 3. Remote Inspection:
+									<br> • Use remote desktop software (e.g., TeamViewer or AnyDesk) to access the user's machine.
+									<br> • Verify VPN settings, system date/time, and installed software version.
+									<br><br> 4. Firewall and Antivirus Check:
+									<br> • Found the user's antivirus (Norton) blocking the VPN application.
+									<br><br> <b>Step 3: Implement Solutions</b>	
+									<br><br> 1. Update VPN Client:
+									<br> • Installed the latest version of the VPN client compatible with the company’s server.
+									<br><br> 1. Check System Logs:	Configure Antivirus:
+									<br> • Added the VPN client as an exception in the Norton firewall and antivirus settings.
+									<br><br> 1. Check System Logs:	Reconnect to VPN:
+									<br> • Restarted the user's device to apply the changes.
+									<br> • Attempted to connect, but the error persisted.
+									<br><br> 1. Check System Logs:	Network Gateway Verification:
+									<br> • Verified that the VPN gateway was operational by checking with the network administrator.
+									<br> • Discovered the VPN server IP had recently changed due to a server migration, but the user's profile was still using the old IP.
+									<br><br> <b>Step 4: Final Resolution</b>	
+									<br><br> 1. Update VPN Server Address:
+									<br> • Edited the user's VPN configuration to reflect the new gateway address.
+									<br><br> 2. Reconnect to VPN:
+									<br> • Successfully established a secure connection.
+									<br><br> 3. Test Connectivity:
+									<br> • Verified access to internal company resources.
+									<br> • Confirmed the user could resume their work without issues.
+									
+								        <br><br> <b>Tools Used</b> 
+									<br> • Diagnostic Tools: Ping, tracert, and VPN log analysis.
+									<br> • Remote Access Software: TeamViewer.
+									<br> • Antivirus Configuration: Norton Security Console.
+									<br> • Communication: Teams for real-time guidance.
+									
+								        <br><br> <b>Best Practices Followed</b>
+									<br> • Systematic Approach: Followed a structured process to isolate the issue step by step.
+									<br> • Clear Communication: Maintained consistent updates with the user.
+									<br> • Documentation: Recorded all steps and findings for knowledge base updates.
+									<br> • Preventive Measures: Created an internal memo to alert all remote users about updating their VPN profiles.
+									
+								        <br><br> <b>Before and After???????????????????</b> 
+									<br> 1. Flowchart of Troubleshooting Steps:????????????????
+									<br> • Initial Diagnosis: Verify user reports → Reproduce the error.
+									<br> • Problem Isolation: Analyze logs → Check connectivity → Remote inspection.
+									<br> • Resolution: Update VPN client → Configure firewall → Adjust VPN settings.
+									<br> 2. Screenshots:?????????????????????????????
+									<br> • Before: VPN error message displayed on the client.
+									<br> • After: Successfully connected to the VPN with the company's intranet homepage loaded.
+									
+								        <br><br> <b>Outcome</b>
+									<br> The ticket was resolved in under 2 hours, and the user resumed productivity. Documentation of the case was added to the internal knowledge base, reducing resolution time for similar issues by 40%.
+									
+									<br> <br>Conclusion:
+									<br>This case study highlights technical expertise, effective communication, and adherence to best practices in resolving complex IT support tickets.
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
 
